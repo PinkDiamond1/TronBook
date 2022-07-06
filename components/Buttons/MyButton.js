@@ -8,7 +8,7 @@ export function MyButton({ onClick, h, text, primary }) {
     'px-3 py-0 bg-indigo-100 bg-opacity-10 border-2 border-indigo-400 rounded-xl text-indigo-400 font-semibold  hover:bg-indigo-400 hover:text-snow transition-colors duration-300'
 
   return (
-    <div className={`flex flex-grow color-snow  w-${3 * h} h-${h}`}>
+    <div className={`color-snow  w-${3 * h} h-${h}`}>
       <button
         className={primary ? primaryStyle : secondaryStyle}
         onClick={onClick}

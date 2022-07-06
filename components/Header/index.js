@@ -33,7 +33,7 @@ export default function Header() {
               onClick={connectButtonHit}
               primary={false}
             />
-            <motion.div
+            {/* <motion.div
               initial={false}
               animate={store.account ? 'visible' : 'hidden'}
               exit={{ opacity: 0 }}
@@ -45,28 +45,29 @@ export default function Header() {
               className="ml-3 px-3 py-1 bg-indigo-100 bg-opacity-10 hidden sm:flex rounded-tr-xl rounded-bl-xl text-indigo-400 hover:text-snow transition-colors duration-300"
             >
               {store.account}
-            </motion.div>
-            <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-              <div className="relative flex-shrink-0 flex items-center text-white mr-6">
+            </motion.div> */}
+            <div className="items-center justify-center sm:items-stretch sm:justify-start mx-auto">
+              {/* <div className="relative flex-shrink-0 flex text-white mr-auto"> */}
                 <motion.div
                   animate={{
-                    scale: [1, 2, 2, 1, 1],
-                    rotate: [0, 0, 360, 360, 360],
-                    borderRadius: ['20%', '20%', '50%', '50%', '20%'],
+                    scale: [1, 2, 2, 2, 2, 1],
+                    rotate: [0, 0, 21, -11, 0, 0],
+                    // borderRadius: ['20%', '20%', '50%', '50%', '20%'],
                   }}
-                  transition={{ duration: 3 }}
+                  transition={{ duration: 2 }}
                 >
                   <Image
-                    layout="fill"
+                    height={55}
+                    width={111}
                     src="/ethereum-eth-logo-full-horizontal.svg"
                     alt="ETHsvg"
                   />
                 </motion.div>
-              </div>
+              {/* </div> */}
               {/* <div className="flex-shrink-0 items-center text-white hidden sm:flex ">
 
               </div> */}
-              <div className="hidden sm:block sm:ml-6"></div>
+              {/* <div className="hidden sm:block sm:ml-6"></div> */}
             </div>
             <div className="sm:inset-auto sm:ml-6 ">
               {/** notifications */}
