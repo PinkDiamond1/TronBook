@@ -1,6 +1,7 @@
-# Roadmap for the you blockchain-contacts
+# Roadmap for blockchain☎️contacts
 
 🥁
+
 A w3bapp for your blockchain contacts.
 The base-func:
 You auth with your wallet, we fetch all the wallets you ever had interaction with (on EVM chains) and you can save them with names, notes and tags, basically like the contacts on your phone.
@@ -24,3 +25,21 @@ The social impact of this app would be to help w3b users to organize and interac
 
 1. Get started:
     - find a template or make a new UI design.
+    - Open questions ❔:
+        - from where to fetch blockchain data (address interactions)
+        - which chains we want to support (Mumbai & Kovan/Rinkeby/Goerly?)
+        - what sdk for wallet auth (web3Modal & ethers rather than web3js?)
+2. UI:
+    - mockup UI
+    - Wallet auth 
+    - go live (netlify?)
+
+## Resources
+
+[Polygon-Fauna app](https://docs.polygon.technology/docs/develop/dapp-fauna-polygon-react/) decentralized DB with contract call on every DB entry. Not sure what we need to call the contract for.
+
+[BuildIt wk#1](https://www.youtube.com/watch?v=S8hZ5rDV7kg)
+
+[BuildIt wk#2](https://www.youtube.com/watch?v=2Bae-wfl0es)
+
+[XMTP chat app](https://github.com/xmtp/example-chat-react_)
